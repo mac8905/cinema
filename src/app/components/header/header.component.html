@@ -1,0 +1,18 @@
+<mat-toolbar color="default">
+  <span>Mostrando películas en:</span>
+
+  <mat-toolbar-row>
+    <mat-form-field>
+      <mat-select>
+        <mat-option *ngFor="let item of cities" [value]="item.value">
+          {{ item.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <span class="example-spacer"></span>
+    <span>Cartelera</span>
+    <span>|</span>
+    <span>Próximamente</span>
+  </mat-toolbar-row>
+</mat-toolbar>
